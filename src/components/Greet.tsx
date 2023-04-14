@@ -1,15 +1,11 @@
-import React from 'react'
+type Props = {
+    name: string
+}
 
-interface Props {}
-
-const Greet = (props: Props) => {
-    const {} = props
-
+export const Greet = (props: Props) => {
     return (
         <div>
-            <h1>Hello from Greet</h1>
+            Hello { props.name }
         </div>
     )
 }
-
-export default Greet;
