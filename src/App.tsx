@@ -8,6 +8,7 @@ import { Oscar } from './components/Oscar';
 import { Button } from './components/Button';
 import { Container } from './components/Container';
 import { Loggedin } from './components/Loggedin';
+import Counter from './components/Counter';
  
 function App() {
 
@@ -29,7 +30,7 @@ function App() {
 
   return (
     <div className="App">
-        <Loggedin />
+        <Counter />
     </div>
   );
 }
