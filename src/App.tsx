@@ -3,7 +3,9 @@ import { Greet } from './components/Greet';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
 import { Status } from "./components/Status";
-
+import { Heading } from './components/Heading';
+import { Oscar } from './components/Oscar';
+ 
 function App() {
 
   const personName = {
@@ -24,10 +26,9 @@ function App() {
 
   return (
     <div className="App">
-      <Greet name="Mahdi" messageCount={10} isLoggedIn={true} />
-      <Person name={personName} />
-      <PersonList names={nameLists} />
-      <Status status='loading' />
+        <Oscar>
+          <Heading>Placeholder text</Heading>
+        </Oscar>
     </div>
   );
 }
