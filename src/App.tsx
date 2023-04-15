@@ -5,6 +5,7 @@ import { PersonList } from './components/PersonList';
 import { Status } from "./components/Status";
 import { Heading } from './components/Heading';
 import { Oscar } from './components/Oscar';
+import { Button } from './components/Button';
  
 function App() {
 
@@ -26,9 +27,7 @@ function App() {
 
   return (
     <div className="App">
-        <Oscar>
-          <Heading>Placeholder text</Heading>
-        </Oscar>
+        <Button handleClick={() => console.log("Clicking")} />
     </div>
   );
 }
